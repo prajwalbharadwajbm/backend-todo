@@ -33,6 +33,16 @@ To get started with the ToDo application, follow these steps:
      ```
    - Open your web browser and visit [http://localhost:8080](http://localhost:8080) to interact with the ToDo application.
 
+4. **Running the project in a container:**
+  - Build a Docker image using the Dockerfile in the repo
+    ```bash
+     docker build -t todoapp .
+     ```
+  - Run the image, which inturn will spin-up a container with base image as Go
+    ```bash
+    docker run -p 8080:8080 todoapp
+     ```
+
 ## Project Structure
 The project is structured as follows:
 
